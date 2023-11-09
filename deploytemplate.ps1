@@ -13,5 +13,5 @@
 Connect-AzAccount
 
 #- deploy template and parameters for storage account
-New-AzResourceGroup -Name 'dorien.garcia' -Location "eastus"
-New-AzResourceGroupDeployment -ResourceGroupName 'dorien.garcia' -TemplateFile 'D:\Users\dorien.garcia\source\repos\AzureDeploy\azuredeploy.json' -TemplateParameterFile 'D:\Users\dorien.garcia\source\repos\AzureDeploy\azuredeploy.parameters.json'
+New-AzResourceGroup -Name 'team2' -Location "eastus"
+New-AzResourceGroupDeployment -ResourceGroupName 'team2' -TemplateFile 'D:\Users\dorien.garcia\source\repos\AzureChallengeTeam2\template.json' -TemplateParameterFile 'D:\Users\dorien.garcia\source\repos\AzureChallengeTeam2\templateparameters.json'
