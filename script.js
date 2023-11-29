@@ -3,7 +3,7 @@ cgptApiKey="YOURAPIKEY"
 async function submit() {
     data={}
     data['comments']=document.getElementsByName("comments").value
-    data['comments']=document.getElementsByName("email").value
+    data['email']=document.getElementsByName("email").value
     data['fname']=document.getElementsByName("fname").value
     data['lname']=document.getElementsByName("lname").value
     data['rate']=parseInt(document.querySelector('input[name="rate"]:checked').value);
