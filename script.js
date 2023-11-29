@@ -2,10 +2,10 @@ cgptApiKey="YOURAPIKEY"
 
 async function submit() {
     data={}
-    data['comments']=document.getElementById("comments").value
-    data['comments']=document.getElementById("email").value
-    data['fname']=document.getElementById("fname").value
-    data['lname']=document.getElementById("lname").value
+    data['comments']=document.getElementByName("comments").value
+    data['comments']=document.getElementByName("email").value
+    data['fname']=document.getElementByName("fname").value
+    data['lname']=document.getElementByName("lname").value
     data['rate']=parseInt(document.querySelector('input[name="rate"]:checked').value);
     data['satisfied']=parseInt(document.querySelector('input[name="satisfied"]:checked').value);
     data['prices']=parseInt(document.querySelector('input[name="prices"]:checked').value);
