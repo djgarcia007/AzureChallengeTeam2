@@ -96,7 +96,7 @@
       }
       }
     </style>
-    <script src="script.js" async defer></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <div class="testbox">
@@ -172,11 +172,11 @@
         <h4>Email</h4>
         <small>Only if you want to hear more from us.</small>
         <input class="email" type="text" name="email" />
+        <div class="btn-block">
+          <button type="button" onclick="submit()">Send Feedback</button>
+        </div>
        </form>
-     <div class="btn-block">
-        <button type="button" onclick="submit()">Send Feedback</button>
-      </div>
-      <div id="analysis">Analysis Here</div>
+    <div id="analysis">Analysis Here</div>
     </div>
   </body>
 </html>
