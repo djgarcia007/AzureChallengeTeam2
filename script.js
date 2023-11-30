@@ -10,6 +10,7 @@ async function submit() {
     data['timeliness']=parseInt(document.querySelector('input[name="timeliness"]:checked').value);
     data['support']=parseInt(document.querySelector('input[name="support"]:checked').value);
     data['recommend']=parseInt(document.querySelector('input[name="recommend"]:checked').value);
+    data['id']=Math.random();
     try {
         const response=await fetch('https://prod-80.eastus.logic.azure.com:443/workflows/5a13e30726ea47f6809a8d9fb0e38237/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=NNHHMAsYF0guTq1N6V4Mp5R40iavtwh6kFys-fy7Zts',
         {
