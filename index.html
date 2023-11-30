@@ -100,7 +100,7 @@
   </head>
   <body>
     <div class="testbox">
-      <form class="form-inline">
+      <form method="post" id="sendfeedback" action="">
         <h1>Customer Feedback Form</h1>
         <p>Please take a few minutes to give us feedback about our service by filling in this short Customer Feedback Form. We are conducting this research in order to measure your level of satisfaction with the quality of our service. We thank you for your participation.</p>
         <hr />
@@ -173,10 +173,10 @@
         <small>Only if you want to hear more from us.</small>
         <input class="email" type="text" name="email" />
         <div class="btn-block">
-          <button type="button" onclick="submit()">Send Feedback</button>
+          <input type="button" onclick="submit()" id="submit" value="Send Feedback">
         </div>
-       </form>
-    <div id="analysis">Analysis Here</div>
+        <div id="analysis">Analysis Here</div>
+      </form>
     </div>
   </body>
 </html>
