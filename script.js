@@ -1,5 +1,3 @@
-cgptApiKey="YOURAPIKEY"
-
 async function submit() {
     data={}
     data['comments']=document.getElementsByName("comments")[0].value
